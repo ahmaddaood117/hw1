@@ -73,6 +73,6 @@ server.put("/gis/addpolygon", (req, res) => {
     }
 })
 
-server.listen(port, () => {
+server.listen(process.env.PORT || port, () => {
     console.log('listening on port %s...', port) 
    });
